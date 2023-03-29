@@ -1,0 +1,48 @@
+@use '../abstracts/' as abs;
+
+.gallery {
+    padding-block: 30vh;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+
+        @include abs.for-tablet-up {
+            flex-flow: row wrap;
+        }
+    }
+
+    &__side {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4em;
+
+        @include abs.for-tablet-up {
+            gap: calc(var(--index) * 10);
+        }
+
+        &--left {
+            @include abs.for-tablet-up {
+                padding-block-start: calc(var(--index) * 12);
+            }
+        }
+    }
+
+    &__item {
+        max-width: abs.toRem(350);
+        max-height: 120vh;
+        border-radius: 8px;
+
+        @include abs.for-tablet-up{
+            max-width: abs.toRem(400);
+        }
+    }
+
+    &__title {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-block-end: .7em;
+    }
+}
