@@ -1,11 +1,15 @@
 @use '../abstracts/' as abs;
 
 .gallery {
-    padding-block: 30vh;
+    padding-top: 10rem;
+    @include abs.for-tablet-up {
+        padding-block: 30vh;
+    }
 
     &__container {
         display: flex;
         flex-direction: column;
+        gap: 4em;
 
         @include abs.for-tablet-up {
             flex-flow: row wrap;

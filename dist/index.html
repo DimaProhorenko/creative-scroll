@@ -9,14 +9,22 @@
   </head>
   <body>
     <main class="scroll-wrapper">
-      <div class="scroll-content">
+      <div
+        class="scroll-content"
+        style="
+          border-top: 1px solid transparent;
+          border-bottom: 1px solid transparent;
+        "
+      >
         <section class="hero">
-          <div class="hero__image" data-speed="0.6" data-lag=".5">
+          <div class="hero__image will-change" data-speed="0.6" data-lag=".5">
             <img src="./assets/img/hero.png" alt="" class="hero__img" />
           </div>
           <div class="wrapper">
             <div class="hero__content">
-              <h1 class="hero__title" data-speed="1.2">Creative scroll</h1>
+              <h1 class="hero__title will-change" data-speed="1.2">
+                Creative scroll
+              </h1>
             </div>
           </div>
         </section>
@@ -24,7 +32,10 @@
         <section class="gallery section">
           <div class="wrapper">
             <div class="gallery__container">
-              <div class="gallery__side gallery__side--left" data-speed=".8">
+              <div
+                class="gallery__side gallery__side--left will-change reset-on-mobile"
+                data-speed=".8"
+              >
                 <img
                   src="./assets/img/work/1.jpg"
                   alt=""
@@ -35,7 +46,10 @@
                   alt=""
                   class="gallery__item"
                 />
-                <div class="gallery__info gallery__item" data-speed="1.2">
+                <div
+                  class="gallery__info gallery__item will-change reset-on-mobile"
+                  data-speed="1.2"
+                >
                   <h2 class="gallery__title">
                     Creative floating scroll with amazing parallax effect
                   </h2>

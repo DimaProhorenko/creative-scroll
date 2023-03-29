@@ -5,3 +5,7 @@
     max-width: abs.toRem(1220);
     margin-inline: auto;
 }
+
+.will-change {
+    will-change: transform;
+}
